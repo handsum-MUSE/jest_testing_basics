@@ -36,4 +36,8 @@ test('There is no I in team', () => {
 test('Admin should be in usernames', () => {
     const usernames = ["Karen", 'Joy', 'Admin'];
     expect(usernames).toContain('Admin');
-})
+});
+
+test('User fetched name should be Leanne Graham', () => {
+    expect(data.name).toEqual('Leanne Graham');
+});
